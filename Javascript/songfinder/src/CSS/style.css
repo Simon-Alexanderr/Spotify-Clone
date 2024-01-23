@@ -1,0 +1,509 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.main-container{
+    height: auto;
+}
+.content-container{
+    margin: auto;
+}
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-split-login{
+    position:absolute; right: 30px; top: 20px;
+}
+a{
+    color: whitesmoke;
+}
+.navigation{
+    background-color: #121212;
+    padding: 10px;
+    border-radius: 10px;
+}
+body{
+    background-color: black;
+    font-family:'Montserrat',sans-serif;
+}
+
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 315px;
+    background-color: #00000000;
+    padding: 23px;
+}
+.logo-img{
+    height: 35px;
+    width: 100px;
+}
+.signup{
+    padding: 15px;background-color: black;color: white;border-radius: 30px;border: none;
+}
+.signup a{
+    text-decoration: none;color: white;font-size: larger;
+}
+.log{
+    padding: 15px;background-color: whitesmoke;color: black;border-radius: 30px;
+}
+.log a{
+    text-decoration: none;color: black;font-size: larger;
+}
+.sidebar .logo .img{
+    width : 200px;
+    padding: 10px;
+}
+.sidebar .navigation ul li{
+    padding : 10px;
+    list-style: none;
+
+}
+.sidebar .navigation ul li a{
+    color :  #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size : 13px;
+
+}
+.sidebar .navigation ul li a:hover ,
+.sidebar .navigation ul li a:focus,
+.sidebar .navigation ul li a:hover{
+color: #ffffff;
+}
+.sidebar .navigation ul li a:hover .fa,
+.sidebar .navigation ul li a:active .fa,
+.sidebar .navigation ul li a:focus .fa{
+color: #b3b3b3;
+}
+.sidebar .navigation ul li a:hover .fa:hover,
+.sidebar .navigation ul li a:active .fa:active,
+.sidebar .navigation ul li a:focus .fa:focus{
+color: #ffffff;
+}
+.policies {
+    margin-block: 40px;
+    padding: 10px;
+    font-size: smaller;
+    display: flex;
+  }
+.sidebar .policies {
+    position: absolute;
+    bottom: 100px;
+}
+.sidebar .policies ul{
+    list-style: none;
+    margin-right: 15px;
+}
+.sidebar .policies ul li{
+    padding-bottom: 5px;;
+}
+.globe{
+    color: white;
+    margin-right: 10px;
+}
+select{
+    color: white;background-color: #121212;border-radius: 20px;padding: 8px;padding-right: 20px;
+}
+.policy{
+    text-decoration:none ;
+    color: #898989;
+
+}   
+.policy:hover{
+    text-decoration: underline;
+    color: whitesmoke;
+} 
+.content-container{
+    color: white;padding-top: 100px;padding-left: 350px;padding-right: 30px;
+}
+.heading{
+    display: flex; justify-content: space-between;padding-bottom: 35px;
+}
+.heading h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.content{
+    display: flex;
+    width: 600px;
+}
+.content ul{
+    display: flex;
+    list-style: none;
+}
+.content li{
+    width: 170px;
+    padding-inline-end: 40px;
+}
+.content h4{
+    font-weight: 700;
+    padding-top: 6px;
+    padding-bottom:6px ;
+}
+.content footer{
+    
+    font-size: smaller;
+    color: #b3b3b3;
+}
+.page-footer, .support-links{
+    position:bottom;
+    margin-bottom: -20px;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.page-footer a{
+    color: #898989;
+    text-decoration: none;
+}
+.support-links{
+    width: 60%;
+}
+.support-links ul{
+    list-style: none;
+    font-size: smaller;
+    
+}
+.support-links li{
+    padding-block: 5px;
+}
+.support-links h4{
+    margin-bottom: 10px;
+}
+.page-footer a:hover{
+    color: whitesmoke;
+    text-decoration: underline;
+
+}
+.social-links{
+    width: 20%;
+}
+.social-links button{
+    background-color: black;
+    color: white;
+    padding: 11px;
+    border-radius:100%;
+    margin-inline: 15px;
+    margin-top: 50px;
+}
+.img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 140px;
+    width: 160px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  .img-box > img{
+    height: 200px;
+  }
+  .caption {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 140px;
+    width: 160px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease;
+  } 
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+.caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+.play-button{
+    padding: 15px;
+    background-color: green;
+    border-radius: 100%;
+    border:none;
+    font-size: larger;
+}
+
+/*-------------------------------------------------------------LOGIN----------------------------------------------------------------------------*/
+.content-container-B{
+    margin: auto;
+    padding-top: 50px;
+    width: 50%;
+}
+.heading-B{
+    text-align: center;
+}
+.login{
+    background-color: #121212;
+    display: grid;
+    margin: auto;
+    margin-inline: 100px;
+    color: white;
+    margin-block: 30px;
+    font-weight: 600;
+}
+.login > form{
+    margin: auto;
+}
+.login h1{
+    font-family: 'Gothic A1', sans-serif;
+    text-align: center;
+}
+.login .heading{
+    margin-block: 50px ;
+}
+.login input{
+    width: 100%;
+    padding: 10px;
+    padding-block: 13px;
+    border-radius: 7px;
+    background-color: black;
+    border: 0.3px solid #898989;
+    margin-block: 10px;
+}
+.login input::placeholder{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: larger;
+}
+.login button{
+    padding: 15px;
+    border-radius: 30px;
+    width: 100%;
+    margin-block: 10px;
+    border-color: #898989;
+
+}
+.login button:hover{
+    border-color: white;
+}
+
+.next{
+    background-color: #1ed760;
+    font-size: larger;
+    font-weight: 600;
+}
+.instead{
+    background-color: black;
+    color: white;
+    border: 1px solid whitesmoke;
+}
+.login a{
+    font-size: smaller;
+    color :#1ed760;
+}
+.login h2 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #2a2a2a
+    ; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+ } 
+ 
+ .login h2 span { 
+     background:black; 
+     padding: 10px; 
+ }
+footer{
+    text-align: center;
+    display: block;
+    color: gray;
+    font-size: small;
+}
+ /*------------------------------------------------SONG PAGE-------------------------------------------------------------*/
+ .content-B{ 
+    display: flex;
+    margin-top: -20px;
+    padding: 20px;
+    background-color:#121212;
+    border-radius: 20px;
+    max-width: 1000px;
+ }
+ .now-playing{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    bottom: 0;
+    background-color: #121212;
+ }
+ .song{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    justify-content: space-evenly;
+ }
+ .song-details{
+padding: 10px;
+padding-block:30px;
+color: white;
+}
+.song-details footer{
+color: gray;
+}
+.song a{
+    text-decoration: none;
+    padding-block: 40px;
+    font-size: x-large;
+}
+.song-menu a{
+    padding: 12px;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: #121212;
+    color: #b3b3b3;
+    color: #2a2a2a;
+    border-radius: 100%;
+    border: none;
+    font-size: large;
+}
+.song-menu a:hover{
+    color: white !important;
+}
+.song-menu i:hover{
+    color: white !important;
+}
+.play {
+    transition: .5s;
+    border-radius: 30px;
+}
+.play :hover{
+    color: #2a2a2a;
+}
+.search a{
+    text-decoration: none;
+    font-size: x-large;
+    margin-inline: 5px;
+}
+.search input{
+    background-color: #121212;
+    padding: 15px;
+    border-radius: 30px;
+    width: 400px;
+    margin-right: 550px;
+    border: 2px solid white;
+}
+.song-devices a,i{
+    margin-inline: 5px;
+    color: #b3b3b3;
+    font-size: larger;
+    text-decoration: none;
+}
+.song-devices a:hover{
+color: white;
+}
+.song-list{
+    height: 600px;
+    background-color:#121212;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+/*-----------------------------------------------------------Search Page------------------------------------------------------------------------*/
+.content-S{ 
+    display: flex;
+    margin-top: -20px;
+    padding: 20px;
+    background-color:#121212;
+    border-radius: 20px;
+    max-width: 1000px;
+ }
+.songs-grid{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 1000px;
+}
+.songs-grid a{
+    text-decoration: none;
+}
+.songs-grid > ul{
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    max-height: 1000px;
+    width: 1300px;
+}
+.songs-grid li{
+    list-style: none;
+}
+
+.title-box > h2{
+position: relative;
+}
+
+.songs-grid > .bg-box,img{
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    margin:5px
+}
+
+
+.bg-box{
+    border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0);
+    position: relative;
+}
+.title-box{
+    position: absolute;
+    top: 12px;
+    left: 20px;  
+    width: 50px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.scroll{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1800px;
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+
+
+.somethingnonexistant{
+    color: #b3b3b3;
+    color: #2a2a2a;
+}

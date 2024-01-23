@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Spotify</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="nav">
+        
+        <div class="sidebar">
+                <a href=""><img src="./images/Spotify_Logo_RGB_White.png" class="logo-img" alt=""></a>
+        
+        <div class="navigation">
+            <ul>
+                <li><a href="./Main Page.html"><span class="fa fa-home"></span> Home</a></li>
+                <li><a href="./Search page.html"><span class="fa fa-search"></span> Search</a></li>
+                
+            </ul>
+            <br>
+            <ul>
+                <li><a href=""><span class="fa fas fa-book"></span> Playlists</a></li>
+                <li><a href=""><span class="fa fas fa-plus-square"></span> Create Playlist</a></li>
+                <li><a href=""><span class="fa fas fa-heart"></span> Liked Songs</a></li>
+            </ul>
+        </div>
+        <div class="policies">
+            <ul>
+                <li><a class="policy" href="">Legal</a></li>
+                <li><a class="policy" href="">Privacy Policy</a></li>
+                <li><a class="policy" href="">Cookies</a></li>
+            </ul>
+            <ul>    
+                
+                <li><a class="policy" href="">Accessibility</a></li>
+                <li><a class="policy" href="">Privacy Center</a></li>
+            </ul>
+        </div>
+        <span class="fa fa-globe globe"></span><select  name="" id="">
+            <option class="fa-globe" value="">English</option>
+            <option value="">Espanol</option>
+            <option value="">Hindi</option>
+        </select>
+
+
+        </div>
+        <div class="nav-split-login">
+            <button class="signup" ><a style="text-decoration: none;color: white;font-size: larger;" href="./Signup.html">Sign Up</a></button>
+            <button class="log" ><a style="text-decoration: none;color: black;font-size: larger;" href="./Login.html">Log in</a></button>
+        </div>
+        </div>
+        <div class="content-container" >
+            <div class="heading" style="display: flex; justify-content: space-between;padding-bottom: 35px;">
+            <h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Spotify Playlists</h2>
+            <span><a style="font-size: smaller;" href="">Show All</a></span>
+            </div>
+            <div class="content">
+                <ul>
+                    <li><div>
+                        <div class="img-box">
+                            <img src="./images/album1.jpeg" alt="">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <button onclick="window.location.href='./Songpage.html';" class="fa fa-play play-button"></button>
+                                  </div>
+                            </div>
+                        </div>
+                        
+                        <h4>Something chill?</h4>
+                        <footer>Handpicked by your favorite, to sooth your nerves and get productive</footer>
+                    </div></li>
+                    <li><div>
+                        <div class="img-box">
+                           <img src="./images/album2.jpeg" alt="">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                    <button  class="fa fa-play play-button" aria-hidden="true"></button>
+                                  </div>
+                            </div>
+                        </div>
+                        <h4>Or something moody?</h4>
+                        <footer>Cheer Up! With these powerful beats</footer>
+                    </div></li>
+                    <li><div>
+                        <div class="img-box">
+                            <img src="./images/album3.jpeg" alt="">
+                            <div class="transparent-box">
+                                <div class="caption">
+                                   <button class="fa fa-play play-button"></button>
+                                  </div>
+                            </div>
+                        </div>
+                        <h4>or maybe something thrilling?</h4>
+                        <footer>Motivate Yourself with these intense raps</footer>
+                    </div></li>
+                </ul>
+            </div>
+            <footer class="page-footer">
+                <div class="support-links" style="width: 60%;">
+                <ul><h4>Company</h4>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">For the Record</a></li>
+                </ul>
+                <ul> <h4>Communities</h4>
+                    <li><a href="">For Artists</a></li>
+                    <li><a href="">Devs</a></li>
+                    <li><a href="">Advertising</a></li>
+                    <li><a href="">Investors</a></li>
+                    <li><a href="">Vendors</a></li>
+                </ul>
+                <ul> <h4>Useful Links</h4>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Free Mobile App</a></li>
+                    
+                </ul>
+                </div>
+                <div class="social-links" style="width: 20%;">
+                    <button class="fa fa-instagram"></button>
+                    <button class="fa fa-facebook"></button>
+                    <button class="fa fa-twitter"></button>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/fe5bb3969a.js" crossorigin="anonymous"></script>
+</body>
+</html>
